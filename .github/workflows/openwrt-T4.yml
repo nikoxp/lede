@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-T4>
 #
 
-name: NanoPC-T4 v0.2
+name: NanoPC-T4 v0.3
 
 on:
   push:
@@ -61,7 +61,7 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone https://github.com/liuran001/openwrt-packages/tree/packages/
+          git clone https://github.com/liuran001/openwrt-packages/luci-app-ssr-plus
 
       - name: Update feeds
         run: |
