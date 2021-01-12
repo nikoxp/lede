@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: Nano-T4-0.7
+name: Nano-T4-0.6
 
 on:
   push:
@@ -81,9 +81,9 @@ jobs:
 
           # 编译NanoPC-T4固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_rockchip_rk3399=y
-          CONFIG_TARGET_BOARD="rockchip-rk3399"
-          CONFIG_TARGET_rockchip_rk3399_Default=y
+          CONFIG_TARGET_rockchip=y
+          CONFIG_TARGET_rockchip_armv8=y
+          CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-4gb=y
           EOF
 
           #
